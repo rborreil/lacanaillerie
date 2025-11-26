@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La Canaillerie, Anglet — Grillades • Fruits de mer • Events</title>
+    <meta
+      name="description"
+      content="La Canaillerie · Pays Basque · Anglet · Restaurant grillades & fruits de mer le midi/soir + studio events B2B (privatisations, lancements, soirées)."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Manrope:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Sticky nav / booking -->
+    <header class="fixed top-0 inset-x-0 z-50">
+      <div class="glass border-b border-white/10">
+        <div
+          class="max-w-screen-2xl mx-auto px-4 py-3 flex items-center justify-between"
+        >
+          <a href="#top" class="flex items-center gap-3">
+            <!-- <div
+                        class="w-10 h-10 rounded-2xl bg-[var(--gold)] text-slate-900 flex items-center justify-center brand text-xl">
+                        LC</div> -->
+            <img
+              src="./img/Logo-blanc-fond-transparent-La-Canaillerie-2048x879.png"
+              alt="Logo La Canaillerie avec deux ours blancs sur un tandem"
+              class="h-14"
+            />
+            <!-- <div>
+                        <div class="brand text-lg leading-none">La Canaillerie</div>
+                        <div class="text-[11px] uppercase tracking-[0.2em] text-slate-400">Grillades & Fruits de mer
+                        </div>
+                    </div> -->
+          </a>
+          <nav class="hidden md:flex items-center gap-12">
+            <a class="px-3 py-2 rounded-xl hover:bg-white/10" href="#menu"
+              >La Carte</a
+            >
+            <a class="px-3 py-2 rounded-xl hover:bg-white/10" href="#about"
+              >À Propos</a
+            >
+            <a class="px-3 py-2 rounded-xl hover:bg-white/10" href="#gallery"
+              >Ambiance</a
+            >
+            <a class="px-3 py-2 rounded-xl hover:bg-white/10" href="#events"
+              >Événements</a
+            >
+            <a class="px-3 py-2 rounded-xl hover:bg-white/10" href="#contact"
+              >Contact</a
+            >
+            <a class="btn btn-square btn-primary ml-2" href="#book">Réserver</a>
+          </nav>
+          <button
+            id="burger"
+            class="md:hidden p-3 rounded-xl bg-black/30 backdrop-blur-sm hover:bg-black/40 transition-all duration-300"
+            aria-label="Menu"
+          >
+            <div class="relative w-5 h-5">
+              <span
+                class="burger-line absolute left-0 top-0 w-5 h-[1px] bg-white rounded-full transition-all duration-300"
+              ></span>
+              <span
+                class="burger-line absolute left-1 top-[9px] w-4 h-[1px] bg-white rounded-full transition-all duration-300"
+              ></span>
+              <span
+                class="burger-line absolute left-0 top-[18px] w-5 h-[1px] bg-white rounded-full transition-all duration-300"
+              ></span>
+            </div>
+          </button>
+        </div>
+        <div id="mobile" class="hidden md:hidden px-4 pb-4">
+          <div class="grid gap-1">
+            <a class="px-3 py-2 rounded-xl hover:bg-white/10" href="#menu"
+              >La Carte</a
+            >
+            <a class="px-3 py-2 rounded-xl hover:bg-white/10" href="#about"
+              >À Propos</a
+            >
+            <a class="px-3 py-2 rounded-xl hover:bg-white/10" href="#gallery"
+              >Ambiance</a
+            >
+            <a class="px-3 py-2 rounded-xl hover:bg-white/10" href="#events"
+              >Événements</a
+            >
+            <a class="px-3 py-2 rounded-xl hover:bg-white/10" href="#contact"
+              >Contact</a
+            >
+            <a class="btn btn-square btn-primary" href="#book">Réserver</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO split B2C / B2B switcher -->
+      <section
+        class="section hero relative flex items-center before:content-[''] before:absolute before:inset-0 before:bg-black/60 before:z-[1] pt-[73px] min-h-[100vh]"
+      >
+        <div
+          class="max-w-screen-2xl mx-auto px-4 pt-[73px] grid md:grid-cols-2 gap-20 items-center relative z-[2]"
+        >
+          <div>
+            <!-- <p class="tagline text-xs uppercase text-slate-400">Pays Basque — Anglet</p> -->
+            <h1 class="brand text-5xl md:text-6xl leading-tight">
+              La Canaillerie — Anglet<br /><span class="text-[var(--gold)]"
+                >instants gourmands à Anglet, face à l'océan</span
+              >
+            </h1>
+            <p class="mt-10 text-lg text-slate-100">
+              Restaurant de grillades & fruits de mer, cocktails affûtés, vibes
+              élégantes. Et un <strong>studio events</strong> pour les marques
+              et entreprises : privatisations, lancements, soirées.
+            </p>
+            <div class="mt-20 flex flex-wrap gap-3">
+              <a href="#menu" class="btn btn-square btn-primary">Au menu</a>
+              <a href="#book" class="btn btn-square btn-ghost"
+                >Réserver une table</a
+              >
+              <a href="#events" class="btn btn-square btn-primary"
+                >Organiser un événement</a
+              >
+            </div>
+            <div class="mt-6 flex gap-2 text-sm text-slate-100">
+              <span class="chip">Grillades</span
+              ><span class="chip">Fruits de mer</span>
+              <span class="chip">Raclettes</span>
+              <span class="chip">Fondues</span>
+              <span class="chip">Cocktails</span
+              ><span class="chip">DJ sets</span>
+            </div>
+          </div>
+          <div class="bento gap-5 md:gap-2">
+            <div class="card overflow-hidden">
+              <img
+                class="w-full h-56 object-cover"
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop"
+                alt="Seafood"
+              />
+            </div>
+            <div class="card tall overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=80&w=1200&auto=format&fit=crop"
+                alt="Grillades"
+              />
+            </div>
+            <div class="card overflow-hidden">
+              <img
+                class="w-full h-56 object-cover"
+                src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1200&auto=format&fit=crop"
+                alt="Cocktails"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- MENU / signature items -->
+      <section id="menu" class="section">
+        <div class="max-w-screen-2xl mx-auto px-4">
+          <div class="flex items-end justify-between mb-6">
+            <h2 class="brand text-3xl">Nos Vedettes</h2>
+            <div class="text-slate-400 text-sm">
+              Allergènes ? Parlez à l'équipe
+            </div>
+          </div>
+          <div
+            class="grid md:grid-cols-3 gap-4 mb-14"
+            id="menu-stars-grid"
+          ></div>
+          <div class="flex items-end justify-between mb-6">
+            <h2 class="brand text-3xl">Notre Carte</h2>
+            <div class="text-slate-400 text-sm"></div>
+          </div>
+          <div class="grid md:grid-cols-4 gap-4" id="menu-grid"></div>
+          <div class="text-center mt-16">
+            <a href="#book" class="btn btn-square btn-primary"
+              >Réserver dès ce soir</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- ABOUT / maison -->
+      <section id="about" class="section">
+        <div
+          class="max-w-screen-2xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start"
+        >
+          <div>
+            <h3 class="brand text-3xl mb-5">
+              Bienvenue à La Canaillerie, votre nouveau repère à la Chambre
+              d’Amour.
+            </h3>
+            <p class="text-slate-300 mb-2">
+              Ici, on cultive l’art de se retrouver : du brunch ensoleillé au
+              dîner animé en passant par le déjeuner, autour de plats à partager
+              et de recettes généreuses, à savourer sur place… ou à emporter
+              grâce à nos Canaille-Box..
+            </p>
+            <p class="text-slate-300 mb-2">
+              Notre cuisine puise dans le meilleur du terroir du Pays basque,
+              relevée d’une touche méditerranéenne. Authentique et conviviale,
+              elle s’accompagne de plats signatures qui se dégustent aussi bien
+              en famille qu’entre amis, en toute simplicité.
+            </p>
+            <p class="text-slate-300 mb-2">
+              La Canaillerie, c’est aussi une ambiance : une terrasse ouverte
+              sur les Sables d’Or avec vue sur le phare de Biarritz, un coin
+              lounge extérieur et intérieur où l’on se sent comme chez soi, et
+              une atmosphère festive avec musique live, DJ sets et nos playlists
+              maison pour admirer le sunset.
+            </p>
+            <p class="text-slate-300">
+              Plus qu’un restaurant, La Canaillerie est un véritable lieu de
+              vie. Accueil, partage, authenticité et bonne humeur en sont la
+              marque de fabrique. Que vous soyez d’Anglet, de passage au Pays
+              basque, en afterwork ou en week-end prolongé, prenez place… et
+              profitez d’un instant privilégié sur la Surf Avenue.
+            </p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="chip">Txuleta</span><span class="chip">Poulpe</span
+              ><span class="chip">Gambas</span><span class="chip">Brebis</span>
+            </div>
+          </div>
+          <div class="card overflow-hidden">
+            <img
+              class="w-full h-80 object-cover"
+              src="https://images.unsplash.com/photo-1595173853421-2b410fa57f43?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5nbGV0fGVufDB8fDB8fHwy"
+              alt="Salle"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- GALLERY / ambiance loop -->
+      <section id="gallery" class="section">
+        <div class="max-w-screen-2xl mx-auto px-4">
+          <div class="flex items-end justify-between mb-6">
+            <h2 class="brand text-3xl">Ambiance</h2>
+            <div class="text-slate-400 text-sm">Chic, vivant, chill</div>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3" id="gal"></div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- EVENTS / B2B block -->
+      <section id="events" class="section">
+        <div class="max-w-screen-2xl mx-auto px-4">
+          <div class="flex items-end justify-between mb-6">
+            <h2 class="brand text-3xl">Studio Événements — B2B</h2>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-4" id="event-grid"></div>
+
+          <div class="mt-6 grid md:grid-cols-3 gap-4">
+            <div class="card p-5">
+              <div class="font-semibold">Privatisation totale</div>
+              <p class="text-slate-400 text-sm mt-1">
+                Jusqu'à 120 pers · DJ set · bar signature · scénographie.
+              </p>
+            </div>
+            <div class="card p-5">
+              <div class="font-semibold">Lancement produit</div>
+              <!-- <p class="text-slate-400 text-sm mt-1">Food pairing grillades/mer · cocktails brandés.</p> -->
+            </div>
+            <div class="card p-5">
+              <div class="font-semibold">Off-site & séminaires</div>
+              <p class="text-slate-400 text-sm mt-1">
+                Ateliers, chef table, afterwork avec musique.
+              </p>
+            </div>
+          </div>
+          <!-- Bouton -->
+          <div class="text-center mt-16">
+            <a href="#contact" class="btn btn-square btn-ghost"
+              >Demander un devis</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- BOOK / contact quick -->
+      <section id="book" class="section">
+        <div class="max-w-screen-2xl mx-auto px-4">
+          <div class="flex items-end justify-between mb-6">
+            <h2 class="brand text-3xl">Réservations</h2>
+          </div>
+          <div class="mx-auto px-4 grid md:grid-cols-2 gap-8 items-start">
+            <div class="card p-5">
+              <h3 class="text-xl font-semibold mb-3">Réserver une table</h3>
+              <form id="resa" class="grid gap-3">
+                <input
+                  name="name"
+                  required
+                  placeholder="Nom"
+                  class="rounded-xl bg-slate-900 border border-slate-700 px-3 py-2"
+                />
+                <div class="grid grid-cols-2 gap-3">
+                  <input
+                    name="date"
+                    type="date"
+                    required
+                    class="rounded-xl bg-slate-900 border border-slate-700 px-3 py-2"
+                  />
+                  <input
+                    name="time"
+                    type="time"
+                    required
+                    class="rounded-xl bg-slate-900 border border-slate-700 px-3 py-2"
+                  />
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                  <input
+                    name="party"
+                    type="number"
+                    min="1"
+                    max="12"
+                    required
+                    placeholder="Couverts"
+                    class="rounded-xl bg-slate-900 border border-slate-700 px-3 py-2"
+                  />
+                  <input
+                    name="phone"
+                    required
+                    placeholder="Téléphone"
+                    class="rounded-xl bg-slate-900 border border-slate-700 px-3 py-2"
+                  />
+                </div>
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="Email"
+                  class="rounded-xl bg-slate-900 border border-slate-700 px-3 py-2"
+                />
+                <textarea
+                  name="notes"
+                  placeholder="Occasion, préférences..."
+                  class="rounded-xl bg-slate-900 border border-slate-700 px-3 py-2"
+                ></textarea>
+                <button class="btn btn-square btn-primary">Confirmer</button>
+              </form>
+              <div id="resa-msg" class="mt-2 text-sm"></div>
+            </div>
+            <div class="card p-5">
+              <h3 class="text-xl font-semibold mb-3">Organiser un event</h3>
+              <form id="b2b" class="grid gap-3">
+                <input
+                  name="company"
+                  required
+                  placeholder="Société"
+                  class="rounded-xl bg-slate-900 border border-slate-700 px-3 py-2"
+                />
+                <div class="grid grid-cols-2 gap-3">
+                  <input
+                    name="guests"
+                    type="number"
+                    min="10"
+                    required
+                    placeholder="Invités"
+                    class="rounded-xl bg-slate-900 border border-slate-700 px-3 py-2"
+                  />
+                  <select
+                    name="format"
+                    class="rounded-xl bg-slate-900 border border-slate-700 px-3 py-2"
+                  >
+                    <option>Afterwork</option>
+                    <option>Lancement</option>
+                    <option>Privatisation</option>
+                    <option>Déjeuner presse</option>
+                  </select>
+                </div>
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="Email pro"
+                  class="rounded-xl bg-slate-900 border border-slate-700 px-3 py-2"
+                />
+                <textarea
+                  name="brief"
+                  placeholder="Brief / objectifs"
+                  class="rounded-xl bg-slate-900 border border-slate-700 px-3 py-2"
+                ></textarea>
+                <button class="btn btn-square btn-ghost">
+                  Envoyer la demande
+                </button>
+              </form>
+              <div id="b2b-msg" class="mt-2 text-sm"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="max-w-screen-2xl mx-auto px-4">
+          <div class="flex items-end justify-between mb-6">
+            <h2 class="brand text-3xl">Coordonnées</h2>
+          </div>
+          <div class="mx-auto px-4 grid md:grid-cols-2 gap-8 items-start">
+            <div class="card overflow-hidden">
+              <iframe
+                class="w-full h-64 border-0"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.05661611608!2d-1.544482123475561!3d43.501154462250945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd516aed6d0ea6bf%3A0x26c194e85f86664e!2s3%20Esp.%20des%20Gascons%2C%2064600%20Anglet!5e0!3m2!1sfr!2sfr!4v1764097837811!5m2!1sfr!2sfr"
+              ></iframe>
+              <div class="p-5">
+                <div class="font-semibold">La Canaillerie - Anglet</div>
+                <div class="text-slate-400 text-sm">
+                  3 Esp. des Gascons, 64600 Anglet · +33 5 59 42 03 39 ·
+                  restaurant@lacanaillerie-anglet.fr
+                </div>
+              </div>
+            </div>
+            <div class="card p-5">
+              <div class="font-semibold mb-2">Horaires</div>
+              <div class="text-slate-400 text-sm">
+                Mardi : Fermé<br />Lun-Mer–Jeu : 08:30–19:00<br />Ven–Sam-Dim : 08:30–23:00
+              </div>
+              <div class="mt-4 font-semibold mb-2">Newsletter</div>
+              <form id="nl" class="flex gap-2">
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="Votre email"
+                  class="flex-1 rounded-xl bg-slate-900 border border-slate-700 px-3 py-2"
+                />
+                <button class="btn btn-square btn-primary">S'abonner</button>
+              </form>
+              <div id="nl-msg" class="text-sm mt-2"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 py-8">
+      <div
+        class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-slate-400"
+      >
+        <div>© <span id="year"></span> La Canaillerie — Anglet</div>
+        <div class="flex gap-3">
+          <span class="chip">Instagram</span><span class="chip">Facebook</span
+          ><span class="chip">TikTok</span><span class="chip">Twitter</span
+          ><span class="chip">Press</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
