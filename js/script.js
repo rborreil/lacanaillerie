@@ -30,29 +30,21 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       name: "Tapas & Entrées",
       desc: "",
-      //   price: 29,
-      //   tag: "seafood",
       img: "./img/menu-1.jpg",
     },
     {
       name: "Plats & Desserts",
       desc: "",
-      //   price: 32,
-      //   tag: "spicy",
       img: "./img/menu-2.jpg",
     },
     {
       name: "Boissons Sans Alcool",
       desc: "",
-      //   price: 21,
-      //   tag: "popular",
       img: "./img/menu-3.jpg",
     },
     {
       name: "Boissons Alcoolisées",
       desc: "",
-      //   price: 26,
-      //   tag: "gluten-free",
       img: "./img/menu-4.jpg",
     },
   ];
@@ -74,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGRqJTIwc2V0fGVufDB8fDB8fHwy3D",
 
     "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bXVzaXF1ZXxlbnwwfHwwfHx8Mg%3D%3D",
-    
+
     "https://images.unsplash.com/photo-1485872299829-c673f5194813?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmFyfGVufDB8fDB8fHwy",
 
     "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29uY2VydHxlbnwwfHwwfHx8Mg%3D%3D",
@@ -134,14 +126,33 @@ document.addEventListener("DOMContentLoaded", function () {
   const mgrid = $("#menu-grid");
   mgrid.innerHTML = MENUS.map(
     (m) => `
-      <article class="card overflow-hidden">
-        <div class="h-44 w-full bg-cover bg-center" style="background-image:url('${m.img}')"></div>
+      <article class="menu-item card overflow-hidden cursor-pointer" data-image="${m.img}">
+        <div class="h-80 w-full bg-cover bg-center" style="background-image:url('${m.img}')"></div>
         <div class="p-4">
               <h3 class="font-semibold">${m.name}</h3>
               <p class="text-slate-400 text-sm">${m.desc}</p>
         </div>
       </article> `
   ).join("");
+
+  // JS pour afficher l’image au clic
+
+  // const preview = document.getElementById("menu-preview");
+  // const previewImg = document.getElementById("menu-preview-img");
+
+  // mgrid.addEventListener("click", (e) => {
+  //   const item = e.target.closest(".menu-item");
+  //   if (!item) return;
+
+  //   const img = item.dataset.image;
+
+  //   // Empêche le flash si la même image est déjà affichée
+  //   if (previewImg.src !== img) {
+  //     previewImg.src = img;
+  //   }
+
+  //   preview.classList.remove("hidden");
+  // });
 
   // Gallery
   const gal = $("#gal");

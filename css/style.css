@@ -23,6 +23,7 @@ body {
   /* background: linear-gradient(180deg, var(--darkgreen), var(--nightgreen)); */
   background: var(--darkgreen);
   color: #e5e7eb;
+  /* overflow-x: hidden; */
 }
 
 /* Animation burger → X */
@@ -62,7 +63,12 @@ body {
     background-image: url("../img/Logo-blanc-fond-transparent-La-Canaillerie-2048x879.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+}
+@media (min-width: 980px) {
+  #book {
     background-size: contain;
+  }
 }
 
 .brand {

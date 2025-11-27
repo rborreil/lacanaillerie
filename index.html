@@ -128,13 +128,13 @@
                 >Organiser un événement</a
               >
             </div>
-            <div class="mt-6 flex gap-2 text-sm text-slate-100">
+            <div class="mt-6 flex flex-wrap gap-2 text-sm text-slate-100">
               <span class="chip">Grillades</span
               ><span class="chip">Fruits de mer</span>
-              <span class="chip">Raclettes</span>
-              <span class="chip">Fondues</span>
               <span class="chip">Cocktails</span
               ><span class="chip">DJ sets</span>
+              <span class="chip">Raclettes</span>
+              <span class="chip">Fondues</span>
             </div>
           </div>
           <div class="bento gap-5 md:gap-2">
@@ -169,7 +169,7 @@
       <section id="menu" class="section">
         <div class="max-w-screen-2xl mx-auto px-4">
           <div class="flex items-end justify-between mb-6">
-            <h2 class="brand text-3xl">Nos Vedettes</h2>
+            <h2 class="brand text-3xl">Nos Plats Signatures</h2>
             <div class="text-slate-400 text-sm">
               Allergènes ? Parlez à l'équipe
             </div>
@@ -182,6 +182,15 @@
             <h2 class="brand text-3xl">Notre Carte</h2>
             <div class="text-slate-400 text-sm"></div>
           </div>
+          <!-- Preview menus -->
+          <div id="menu-preview" class="mb-6 hidden">
+            <img
+              id="menu-preview-img"
+              class="rounded-xl max-w-full h-auto block mx-auto"
+            />
+          </div>
+
+          <!-- Grid -->
           <div class="grid md:grid-cols-4 gap-4" id="menu-grid"></div>
           <div class="text-center mt-16">
             <a href="#book" class="btn btn-square btn-primary"
@@ -229,10 +238,10 @@
               basque, en afterwork ou en week-end prolongé, prenez place… et
               profitez d’un instant privilégié sur la Surf Avenue.
             </p>
-            <div class="mt-5 flex flex-wrap gap-2">
+            <!-- <div class="mt-5 flex flex-wrap gap-2">
               <span class="chip">Txuleta</span><span class="chip">Poulpe</span
               ><span class="chip">Gambas</span><span class="chip">Brebis</span>
-            </div>
+            </div> -->
           </div>
           <div class="card overflow-hidden px-10 py-20">
             <img
@@ -251,7 +260,7 @@
         <div class="max-w-screen-2xl mx-auto px-4">
           <div class="flex items-end justify-between mb-6">
             <h2 class="brand text-3xl">Ambiance</h2>
-            <div class="text-slate-400 text-sm">Chic, vivant, chill</div>
+            <div class="text-slate-400 text-sm">Sport, chaleur & chill</div>
           </div>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-3" id="gal"></div>
         </div>
@@ -419,13 +428,15 @@
         </div>
       </section>
 
+      <div class="divider"></div>
+
       <!-- CONTACT -->
       <section id="contact" class="section">
         <div class="max-w-screen-2xl mx-auto px-4">
           <div class="flex items-end justify-between mb-6">
             <h2 class="brand text-3xl">Coordonnées</h2>
           </div>
-          <div class="mx-auto px-4 grid md:grid-cols-2 gap-8 items-start">
+          <div class="mx-auto grid md:grid-cols-2 gap-8 items-start">
             <div class="card overflow-hidden">
               <iframe
                 class="w-full h-64 border-0"
@@ -441,6 +452,7 @@
                 </div>
               </div>
             </div>
+            <!-- Horaires -->
             <div class="card p-5">
               <div class="font-semibold mb-2">Horaires</div>
               <div class="text-slate-400 text-sm">
@@ -471,11 +483,58 @@
         class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10 text-sm text-slate-400"
       >
         <div>© <span id="year"></span> La Canaillerie — Anglet</div>
-        <img class="w-28" src="./img/Logo-blanc-fond-transparent-La-Canaillerie-2048x879.png" alt="">
-        <div class="flex gap-3">
-          <span class="chip">Instagram</span><span class="chip">Facebook</span
-          ><span class="chip">TikTok</span><span class="chip">Twitter</span
-          ><span class="chip">Press</span>
+        <a href="#top">
+          <img
+            class="w-28"
+            src="./img/Logo-blanc-fond-transparent-La-Canaillerie-2048x879.png"
+            alt="Logo de La Canaillerie"
+          />
+        </a>
+        <!-- Icones Réseaux -->
+        <div class="flex flex-wrap items-center gap-5">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            class="p-2 rounded-xl bg-black/20 backdrop-blur-sm hover:bg-black/30 text-white hover:text-[var(--gold)] transition"
+          >
+            <!-- Instagram SVG ici -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-6 h-6"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            class="p-2 rounded-xl bg-black/20 backdrop-blur-sm hover:bg-black/30 text-white hover:text-[var(--gold)] transition"
+          >
+            <!-- Facebook SVG ici -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-6 h-6"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.5l.5-4H14V7a1 1 0 0 1 1-1h3z"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
