@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YyVDMyVCNHRlJTIwZGUlMjBib2V1ZnxlbnwwfHwwfHx8Mg%3D%3D",
 
-    "https://images.unsplash.com/photo-1595173853421-2b410fa57f43?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5nbGV0fGVufDB8fDB8fHwy",
+    "./img/sunset-phare.jpg",
 
     "https://images.unsplash.com/photo-1616631124348-c63521eb484c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmNoZSUyMGNoYXJjdXRlcmllfGVufDB8fDB8fHwy",
 
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGRqJTIwc2V0fGVufDB8fDB8fHwy3D",
 
-    "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bXVzaXF1ZXxlbnwwfHwwfHx8Mg%3D%3D",
+    "./img/sunset-surfeurs.jpg",
 
     "https://images.unsplash.com/photo-1485872299829-c673f5194813?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmFyfGVufDB8fDB8fHwy",
 

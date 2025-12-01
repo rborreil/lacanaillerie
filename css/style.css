@@ -40,10 +40,12 @@ body {
 }
 
 .hero {
-  background-image: url('https://plus.unsplash.com/premium_photo-1697729704609-7ebbc2714df1?q=80&amp;w=857&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-position: center;
+  /* background-image: url('https://plus.unsplash.com/premium_photo-1697729704609-7ebbc2714df1?q=80&amp;w=857&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
+  background-image: url('../img/sunset-phare.jpg');
+  /* background-position: 50%; */
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: 70%;
 }
 
 .hero::before {

@@ -41,7 +41,7 @@
                         </div>
                     </div> -->
           </a>
-          <nav class="hidden md:flex items-center gap-12">
+          <nav class="hidden lg:flex items-center gap-8">
             <a class="px-3 py-2 rounded-xl hover:bg-white/10" href="#menu"
               >La Carte</a
             >
@@ -61,7 +61,7 @@
           </nav>
           <button
             id="burger"
-            class="md:hidden p-3 rounded-xl bg-black/30 backdrop-blur-sm hover:bg-black/40 transition-all duration-300"
+            class="lg:hidden p-3 rounded-xl bg-black/30 backdrop-blur-sm hover:bg-black/40 transition-all duration-300"
             aria-label="Menu"
           >
             <div class="relative w-5 h-5">
@@ -77,7 +77,7 @@
             </div>
           </button>
         </div>
-        <div id="mobile" class="hidden md:hidden px-4 pb-4">
+        <div id="mobile" class="hidden lg:hidden px-4 pb-4">
           <div class="grid gap-1">
             <a class="px-3 py-2 rounded-xl hover:bg-white/10" href="#menu"
               >La Carte</a
@@ -106,8 +106,9 @@
         class="section hero relative flex items-center before:content-[''] before:absolute before:inset-0 before:bg-black/60 before:z-[1] pt-[73px] min-h-[100vh]"
       >
         <div
-          class="max-w-screen-2xl mx-auto px-4 pt-[73px] grid md:grid-cols-2 gap-20 items-center relative z-[2]"
+          class="max-w-screen-2xl mx-auto px-4 pt-[73px] grid lg:grid-cols-2 gap-40 items-center relative z-[2]"
         >
+          <!-- Texte Hero -->
           <div>
             <!-- <p class="tagline text-xs uppercase text-slate-400">Pays Basque — Anglet</p> -->
             <h1 class="brand text-5xl md:text-6xl leading-tight">
@@ -138,27 +139,31 @@
               <span class="chip">Fondues</span>
             </div>
           </div>
-          <div class="bento gap-5 md:gap-2">
+          <!-- Images hero -->
+          <div class="bento gap-5 md:gap-3">
             <div class="card overflow-hidden">
               <img
-                class="w-full h-56 object-cover"
-                src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop"
-                alt="Seafood"
+                class="w-full h-80 object-cover object-[10%_20%]"
+                src="./img/logo-vitrine-quincaillerie.jpg"
+                alt="Logo Hero"
               />
+              <!-- https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop -->
             </div>
             <div class="card tall overflow-hidden">
               <img
-                class="w-full h-full object-cover"
-                src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=80&w=1200&auto=format&fit=crop"
+                class="w-full h-full object-cover object-bottom"
+                src="./img/deco-interieure_quincaillerie-2.jpg"
                 alt="Grillades"
               />
+              <!-- https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=80&w=1200&auto=format&fit=crop -->
             </div>
             <div class="card overflow-hidden">
               <img
-                class="w-full h-56 object-cover"
-                src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1200&auto=format&fit=crop"
-                alt="Cocktails"
+                class="w-full h-80 object-cover object-top"
+                src="./img/deco-interieure_quincaillerie.jpg"
+                alt="Seafood"
               />
+              <!-- https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1200&auto=format&fit=crop -->
             </div>
           </div>
         </div>
@@ -188,7 +193,10 @@
           </div>
 
           <!-- Grid Menus -->
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4" id="menu-grid"></div>
+          <div
+            class="grid md:grid-cols-2 lg:grid-cols-4 gap-4"
+            id="menu-grid"
+          ></div>
           <div class="text-center mt-16">
             <a href="#book" class="btn btn-square btn-primary"
               >Réserver dès ce soir</a
@@ -202,7 +210,7 @@
       <!-- ABOUT / maison -->
       <section id="about" class="section">
         <div
-          class="max-w-screen-2xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start"
+          class="max-w-screen-2xl mx-auto px-4 grid lg:grid-cols-2 gap-20 items-start"
         >
           <div>
             <h3 class="brand text-3xl mb-5">
@@ -240,13 +248,13 @@
               ><span class="chip">Gambas</span><span class="chip">Brebis</span>
             </div> -->
           </div>
-          <div class="card overflow-hidden my-auto px-10 py-20">
-            <img
-              class="w-full h-full object-cover"
-              src="./img/Logo-blanc-fond-transparent-La-Quincaillerie-2048x879.png"
-              alt="Salle"
-            />
-          </div>
+          <!-- <div class="card overflow-hidden my-auto"> -->
+          <img
+            class="w-[100%] mx-auto my-auto h-80 object-cover object-[10%_20%] rounded-xl"
+            src="./img/hero_photo-logo_quincaillerie.jpg"
+            alt="Salle"
+          />
+          <!-- </div> -->
         </div>
       </section>
 
@@ -259,7 +267,7 @@
             <h2 class="brand text-3xl">Ambiance</h2>
             <div class="text-slate-400 text-sm">Sport, chaleur & chill</div>
           </div>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-3" id="gal"></div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3" id="gal"></div>
         </div>
       </section>
 
