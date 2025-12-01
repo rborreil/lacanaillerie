@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     "https://images.unsplash.com/photo-1630257574313-9bacc3c521d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9uZHVlJTIwc2F2b3lhcmRlfGVufDB8fDB8fHwy",
 
-    "./img/Logo-blanc-fond-transparent-La-quincaillerie-2048x879.png",
+    "./img/Logo-blanc-fond-transparent-La-Quincaillerie-2048x879.png",
 
     "https://images.unsplash.com/photo-1436076863939-06870fe779c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmklQzMlQThyZXxlbnwwfHwwfHx8Mg%3D%3D",
 
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29uY2VydHxlbnwwfHwwfHx8Mg%3D%3D",
 
-    "./img/Logo-blanc-fond-transparent-La-quincaillerie-2048x879.png",
+    "./img/Logo-blanc-fond-transparent-La-Quincaillerie-2048x879.png",
   ];
   const EVENTS = [
     {
