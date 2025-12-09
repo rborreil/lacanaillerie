@@ -46,6 +46,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -750px;
+  background-position-x: right;
 }
 @media (min-width: 768px) {
   .hero {
@@ -169,9 +170,9 @@ body {
   border-radius: 1.25rem;
   border: 1px solid #1f2937;
   background: linear-gradient(
-    180deg,
+    90deg,
     rgba(15, 23, 42, 0.6),
-    rgba(15, 23, 42, 0.4)
+    rgba(15, 23, 42, 0.2)
   );
 }
 
@@ -183,6 +184,10 @@ body {
 .divider {
   height: 1px;
   background: linear-gradient(90deg, transparent, #fff, transparent);
+}
+.divider-reverse {
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent, #fff);
 }
 
 .tagline {
