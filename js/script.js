@@ -75,20 +75,20 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
   const NOSEVENTS = [
     {
-      title: "DJ Sunset Session",
-      date: "12 sept · 19:00",
-      desc: "Cocktails signature & vibes chill sur la terrasse.",
-      img: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGp8ZW58MHx8MHx8fDA%3D",
-    },
-    {
       title: "One Human Show",
-      date: "21 sept · 18:30",
+      date: "10 janvier · 18:30",
       desc: "Amateurs de la blague & des franches rigolades",
       img: "https://images.unsplash.com/photo-1607805074620-5802aee47bdb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29tJUMzJUE5ZGllbnxlbnwwfHwwfHx8Mg%3D%3D",
     },
     {
+      title: "DJ Sunset Session",
+      date: "12 février · 19:00",
+      desc: "Cocktails signature & vibes chill sur la terrasse.",
+      img: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGp8ZW58MHx8MHx8fDA%3D",
+    },
+    {
       title: "Brunch Marée Basse",
-      date: "21 sept · 11:30",
+      date: "21 mai · 11:30",
       desc: "Buffet fruits de mer & grillades minute.",
       img: "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop",
     },
@@ -289,6 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function openMenu() {
     mobile.classList.remove("hidden");
+    burger.classList.add("open");
     requestAnimationFrame(() => {
       mobile.classList.remove("opacity-0", "scale-95");
       mobile.classList.add("opacity-100", "scale-100");
@@ -298,6 +299,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function closeMenu() {
     mobile.classList.add("opacity-0", "scale-95");
     mobile.classList.remove("opacity-100", "scale-100");
+    burger.classList.remove("open");
 
     setTimeout(() => {
       mobile.classList.add("hidden");
